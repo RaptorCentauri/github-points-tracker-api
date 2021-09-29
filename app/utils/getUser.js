@@ -1,3 +1,6 @@
+import octokit from './authenticateUser.js';
+
+
 const getUser = async () => {
 	const {
 		data: { login },
@@ -5,3 +8,5 @@ const getUser = async () => {
 	
 	return login;
 };
+
+export default getUser;
